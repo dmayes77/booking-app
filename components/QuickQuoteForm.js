@@ -61,15 +61,15 @@ const QuickQuoteForm = ({ serviceCategories = [] }) => {
       actions.setTouched({}); // Reset touched fields for step 2.
     } else {
       // Define the source (if not provided in form, default to "QuickQuoteForm")
-      const source = values.source || 'Ceramic Coating Estimate Request';
+      const source = values.source || "Ceramic Coating Estimate Request";
 
       // Build combinedNotes using the provided snippet logic.
-      let combinedNotes = values.notes || '';
+      let combinedNotes = values.notes || "";
       combinedNotes += `\nWebsite Source: ${source}`;
       if (values.services && values.services.length > 0) {
         combinedNotes += `\nServices: ${values.services
           .map((service) => formatServiceName(service))
-          .join(', ')}`;
+          .join(", ")}`;
       }
 
       // Build the payload to match what the API expects.
@@ -88,7 +88,7 @@ const QuickQuoteForm = ({ serviceCategories = [] }) => {
         },
       };
 
-      try {
+      /* try {
         const res = await fetch('/api/submit', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -104,7 +104,11 @@ const QuickQuoteForm = ({ serviceCategories = [] }) => {
         }
       } catch (error) {
         console.error('Fetch error', error);
-      }
+      } */
+
+      // Directly set the submitted data and show the confirmation screen
+      setSubmittedData(values);
+      setSubmitted(true);
     }
   };
 
