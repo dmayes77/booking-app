@@ -13,6 +13,7 @@ const Container = React.memo(({ children, className = "", ...rest }) => {
   );
 });
 
+Container.displayName = "Container";
 Container.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,

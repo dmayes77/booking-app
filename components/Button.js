@@ -1,4 +1,5 @@
-// Button.js
+import React from "react";
+import PropTypes from "prop-types";
 import NextLink from "next/link";
 
 export default function Button({
@@ -52,3 +53,10 @@ export default function Button({
     </button>
   );
 }
+
+Button.propTypes = {
+  variant: PropTypes.string,
+  type: PropTypes.string,
+  href: PropTypes.string,
+  children: PropTypes.node.isRequired,
+};

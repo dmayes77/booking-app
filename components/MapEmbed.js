@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { GoogleMapsEmbed } from "@next/third-parties/google";
-import PropTypes from "prop-types";
 
 function MapEmbed() {
   // Use an environment variable for the API key (with a fallback for development)

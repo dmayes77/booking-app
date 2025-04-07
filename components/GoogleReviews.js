@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import Icon from "@/components/Icon";
 import Image from "@/components/Image";
 import dynamic from "next/dynamic";

@@ -1,3 +1,4 @@
+
 import classNames from "classnames";
 import PropTypes from "prop-types";
 import React from "react";
@@ -15,6 +16,7 @@ const ButtonGroup = React.memo(({ children, className = "", ...props }) => {
   );
 });
 
+ButtonGroup.displayName = "ButtonGroup";
 ButtonGroup.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,

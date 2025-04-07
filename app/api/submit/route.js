@@ -7,9 +7,9 @@ export async function POST(request) {
     console.log("Received payload from EstimateForm:", payload);
 
     // Access webhook URLs and key from environment variables
-    const webhookURL1 = process.env.local.NEXT_PUBLIC_WEBHOOK_URL_1;
-    const webhookURL2BASE = process.env.local.NEXT_PUBLIC_WEBHOOK_URL_2;
-    const webhookKey = process.env.local.NEXT_PUBLIC_ORBISX_API_KEY;
+    const webhookURL1 = process.env.NEXT_PUBLIC_WEBHOOK_URL_1;
+    const webhookURL2BASE = process.env.NEXT_PUBLIC_WEBHOOK_URL_2;
+    const webhookKey = process.env.NEXT_PUBLIC_ORBISX_API_KEY;
 
     // Second webhook: URL with query parameters
     // Construct the URL by replacing the placeholders with values from the payload.

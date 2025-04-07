@@ -1,4 +1,6 @@
 // IconButton.js
+import React from "react";
+import PropTypes from "prop-types";
 import Button from "./Button";
 import Icon from "./Icon";
 
@@ -18,3 +20,10 @@ export default function IconButton({
     </Button>
   );
 }
+
+IconButton.propTypes = {
+  iconName: PropTypes.string.isRequired,
+  iconSize: PropTypes.number,
+  iconSet: PropTypes.string,
+  children: PropTypes.node.isRequired,
+};

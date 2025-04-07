@@ -11,6 +11,7 @@ import {
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "@/components/Link";
+import PropTypes from "prop-types";
 
 const products = [
   {
@@ -130,3 +131,8 @@ export default function MobileMenu({ mobileMenuOpen, setMobileMenuOpen }) {
     </Dialog>
   );
 }
+
+MobileMenu.propTypes = {
+  mobileMenuOpen: PropTypes.bool.isRequired,
+  setMobileMenuOpen: PropTypes.func.isRequired,
+};

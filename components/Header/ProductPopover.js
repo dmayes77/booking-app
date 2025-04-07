@@ -4,6 +4,15 @@ import React from "react";
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import Link from "@/components/Link";
+import {
+  ChartPieIcon,
+  CursorArrowRaysIcon,
+  FingerPrintIcon,
+  SquaresPlusIcon,
+  ArrowPathIcon,
+} from "@heroicons/react/24/outline";
+import { PlayCircleIcon, PhoneIcon } from "@heroicons/react/20/solid";
+
 
 // Define your product items and calls-to-action
 const products = [
@@ -11,31 +20,31 @@ const products = [
     name: "Analytics",
     description: "Get a better understanding of your traffic",
     href: "#",
-    icon: require("@heroicons/react/24/outline").ChartPieIcon,
+    icon: ChartPieIcon,
   },
   {
     name: "Engagement",
     description: "Speak directly to your customers",
     href: "#",
-    icon: require("@heroicons/react/24/outline").CursorArrowRaysIcon,
+    icon: CursorArrowRaysIcon,
   },
   {
     name: "Security",
     description: "Your customers’ data will be safe and secure",
     href: "#",
-    icon: require("@heroicons/react/24/outline").FingerPrintIcon,
+    icon: FingerPrintIcon,
   },
   {
     name: "Integrations",
     description: "Connect with third-party tools",
     href: "#",
-    icon: require("@heroicons/react/24/outline").SquaresPlusIcon,
+    icon: SquaresPlusIcon,
   },
   {
     name: "Automations",
     description: "Build strategic funnels that will convert",
     href: "#",
-    icon: require("@heroicons/react/24/outline").ArrowPathIcon,
+    icon: ArrowPathIcon,
   },
 ];
 
@@ -43,12 +52,12 @@ const callsToAction = [
   {
     name: "Watch demo",
     href: "#",
-    icon: require("@heroicons/react/20/solid").PlayCircleIcon,
+    icon: PlayCircleIcon,
   },
   {
     name: "Contact sales",
     href: "#",
-    icon: require("@heroicons/react/20/solid").PhoneIcon,
+    icon: PhoneIcon,
   },
 ];
 
