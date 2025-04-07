@@ -1,0 +1,146 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-mad-blue: #0a1f42;
+  --color-mad-red: #ce2034;
+  --color-mad-red-bright: #ff0023;
+  --color-mad-white: #ffffff;
+  --color-mad-blue-50: #e3e7f2;
+  --color-mad-blue-100: #b6c3e1;
+  --color-mad-blue-200: #899ed0;
+  --color-mad-blue-300: #5c79bf;
+  --color-mad-blue-400: #3154ae;
+  --color-mad-blue-500: #0a1f42;
+  --color-mad-blue-600: #081a37;
+  --color-mad-blue-700: #06152c;
+  --color-mad-blue-800: #041021;
+  --color-mad-blue-900: #020a16;
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    color: var(--foreground);
+    background: var(--background);
+    line-height: 1.6;
+    font-family: var(--font-inter), sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+    @apply text-3xl font-bold tracking-tight md:text-4xl;
+  }
+  h2 {
+    @apply text-2xl font-bold tracking-tight md:text-3xl;
+  }
+  h3 {
+    @apply text-xl font-semibold tracking-tight md:text-2xl;
+  }
+  h4 {
+    @apply text-lg font-semibold tracking-tight md:text-xl;
+  }
+  h5 {
+    @apply text-base font-semibold tracking-tight md:text-lg;
+  }
+  h6 {
+    @apply text-sm font-semibold tracking-tight md:text-base;
+  }
+
+  p {
+    @apply text-base leading-relaxed;
+  }
+
+  blockquote {
+    @apply my-4 border-l-4 border-gray-300 pl-4 italic;
+  }
+
+  img {
+    @apply max-w-full;
+  }
+}
+
+@layer components {
+  .h1 {
+    @apply text-2xl font-bold tracking-tight md:text-3xl;
+  }
+  .h2 {
+    @apply text-xl font-bold tracking-tight md:text-2xl;
+  }
+  .h3 {
+    @apply text-lg font-semibold tracking-tight md:text-xl;
+  }
+  .h4 {
+    @apply text-base font-semibold tracking-tight md:text-lg;
+  }
+}
+
+/* Global CSS custom properties for light mode */
+:root {
+  --background: #f8f8f8;
+  --foreground: #171717;
+}
+
+/* Removed dark mode media query entirely */
+
+/* Keyframes for the shine animation */
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) skewX(-25deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(200%) skewX(-25deg);
+    opacity: 0;
+  }
+}
+
+.shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  transform: skewX(-25deg);
+  animation: shine 2s ease-in-out infinite alternate;
+}
+
+.main {
+  @apply mx-auto max-w-7xl space-y-16 p-8;
+}
+
+.section {
+  @apply px-8;
+}

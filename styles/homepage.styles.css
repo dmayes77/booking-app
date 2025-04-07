@@ -1,0 +1,152 @@
+/* Container */
+
+.container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.heroSection {
+  text-align: center;
+  padding: 1rem 1.25rem;
+  background-color: #f5f5f5;
+  height: 100vh;
+}
+
+.ctaButton {
+  padding: 15px 30px;
+  font-size: 1em;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Benefits Section */
+.benefitsSection {
+  padding: 40px 20px;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.sectionTitle {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.benefitsList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.benefitItem {
+  flex: 1;
+  padding: 0 10px;
+  font-size: 1.1em;
+}
+
+/* Process Section */
+.processSection {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  margin-bottom: 30px;
+}
+
+.processList {
+  list-style: decimal;
+  padding-left: 40px;
+}
+
+.processItem {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+/* Testimonials Section */
+.testimonialsSection {
+  padding: 40px 20px;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.testimonial {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.testimonialText {
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+.testimonialClient {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* Gallery Section */
+.gallerySection {
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.galleryImage {
+  max-width: 45%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* FAQ Section */
+.faqSection {
+  padding: 40px 20px;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+.faqItem {
+  margin-bottom: 20px;
+}
+
+.faqQuestion {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.faqAnswer {
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+/* Contact Section */
+.contactSection {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contactText {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.contactLink {
+  color: #000;
+  text-decoration: none;
+}
