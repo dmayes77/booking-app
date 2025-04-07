@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
 const BackgroundImageSection = ({
   backgroundImage,
@@ -30,6 +31,14 @@ const BackgroundImageSection = ({
       <div className="relative z-10">{children}</div>
     </section>
   );
+};
+
+BackgroundImageSection.propTypes = {
+  backgroundImage: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
+  style: PropTypes.object,
+  overlayColor: PropTypes.string,
 };
 
 export default BackgroundImageSection;

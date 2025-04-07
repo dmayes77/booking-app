@@ -1,7 +1,9 @@
-import Header from "@/components/Header/Header";
+
+import React from "react";
 import Head from "next/head";
 import "@/styles/globals.css";
 import { Inter } from "next/font/google";
+import PropTypes from "prop-types";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -29,3 +31,7 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+RootLayout.propTypes = {
+  children: PropTypes.node.isRequired,
+};

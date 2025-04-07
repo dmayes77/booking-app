@@ -1,9 +1,9 @@
+import React from "react";
 import CeramicCoatingEducation from "./CeramicCoatingEducation";
 import BackgroundImageSection from "@/components/BackgroundImageSection";
 import BeforeAfterCompare from "@/components/BeforeAfterCompare";
 import ButtonGroup from "@/components/ButtonGroup";
 import CoatingComparisonSection from "./CoatingComparisonSection";
-import Button from "@/components/Button";
 import Grid from "@/components/Grid";
 import Icon from "@/components/Icon";
 import Image from "@/components/Image";
@@ -293,7 +293,7 @@ export default function LandingPage() {
           <h2 className="sectionTitle">What Our Clients Say</h2>
           <GoogleReviews />
         </Section>
-        
+
         {/* Gallery Section */}
         <section className="gallerySection">
           <h2 className="sectionTitle">Before & After</h2>

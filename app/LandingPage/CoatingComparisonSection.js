@@ -1,10 +1,9 @@
-import React from "react";
-import Button from "@/components/Button";
-import Icon from "@/components/Icon";
-import Grid from "@/components/Grid";
-import Section from "@/components/Section";
 import ButtonGroup from "@/components/ButtonGroup";
+import Grid from "@/components/Grid";
+import Icon from "@/components/Icon";
 import IconButton from "@/components/IconButton";
+import Section from "@/components/Section";
+import PropTypes from "prop-types";
 
 export default function CoatingComparisonSection() {
   return (
@@ -129,3 +128,12 @@ function ComparisonItem({ icon, label, set, value,color }) {
     </li>
   );
 }
+
+// Add prop types validation
+ComparisonItem.propTypes = {
+  icon: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  set: PropTypes.string,
+  value: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+};
